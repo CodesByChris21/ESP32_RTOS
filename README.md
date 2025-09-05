@@ -1,0 +1,3 @@
+# ESP32_RTOS
+
+This project demonstrates a couple of RTOS concepts such as task creation, queues, and also some peripherals for the ESP32 microcontroller.  The system starts by toggling an LED and taking a temperature reading at 1Hz.  After a temperature reading it made, it gets put into the Wifi queue where it gets reported as a UDP packet and a statistics counter is incremented.  That counter is sent to the UART queue where it gets reported as a UART message.
